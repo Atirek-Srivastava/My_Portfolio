@@ -2,18 +2,33 @@ import React from "react";
 import "./Hero.css";
 import profile_img from "../../assets/profile_img.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-
-
+import { useEffect, useRef } from 'react';
+import gsap from 'gsap';
 
 const Hero = () => {
 
-  
+  const textRef = useRef(null);
+
+  useEffect(() => {
+    // GSAP animation code
+    const tl = gsap.timeline({ repeat: -1, yoyo: true }); // Repeat the animation infinitely
+
+    tl.to(textRef.current, {
+      opacity: 0,
+      duration: 1,
+      ease: 'power2.inOut',
+    }).to(textRef.current, {
+      opacity: 1,
+      duration: 1,
+      ease: 'power2.inOut',
+    });
+  }, []);
 
   return (
     <> 
       <div id="home" className="hero">
         <img src={profile_img} alt="" className="profile-img" />
-        <h1>
+        <h1  ref={textRef}>
           <span>I'm Atirek Srivastava </span>, MERN Stack developer
         </h1>
         <p>A passionate and driven Web developer enthusiast looking to launch my career through meaningful internships and job opportunities. With a good knowledge in tech, I am eager to contribute to innovative projects and collaborate with dynamic teams.</p>
@@ -39,5 +54,6 @@ const Hero = () => {
     </>
   );
 };
+
 
 export default Hero;

@@ -6,10 +6,11 @@ import about_profile from "../../assets/about_profile.jpg";
 import { Widgets } from "@mui/icons-material";
 
 function About() {
+
   return (
     <>
       <div id="about" className="about">
-        <div className="about-title">
+        <div className="about-title"  >
           <h1>About me</h1>
           <img src={theme_pattern} alt="" />
         </div>

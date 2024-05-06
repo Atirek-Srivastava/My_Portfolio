@@ -3,7 +3,7 @@ import './Footer.css'
 import logo from '../../assets/logo.png'
 import user_icon from '../../assets/user_icon.svg'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import instagram from '../../assets/instagram_icon.png'
+import instagram from '../../assets/instagram.png'
 import linkedin from '../../assets/linkedin.png'
 import twitter from '../../assets/twitter.avif'
 
@@ -30,13 +30,13 @@ const Footer = () => {
                 © Atirek Srivastava 2024. All Rights Reserved.
                 </p>
                 <div className="footer-bottom-right"><div className="footer-bottom-right-instagram">
-                    <a href='https://www.instagram.com/__atirek_/'> <img src={instagram} alt="" /></a>
+                    <a href='https://www.instagram.com/__atirek_/' target="_blank"> <img src={instagram} alt="" /></a>
                     </div>
                     <div className="footer-bottom-right-twitter"> 
-                    <a href='https://twitter.com/__atirek_'> <img src={twitter} alt="" /></a>
+                    <a href='https://twitter.com/__atirek_' target="_blank"> <img src={twitter} alt="" /></a>
                     </div>
                     <div className="footer-bottom-right-linkedin">
-                    <a href='https://www.linkedin.com/in/atirek-srivastava-586151217/'> <img src={linkedin} alt="" /></a>
+                    <a href='https://www.linkedin.com/in/atirek-srivastava-586151217/' target="_blank"> <img src={linkedin} alt="" /></a>
                     </div></div>
                 
             </div>
