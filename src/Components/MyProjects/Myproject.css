@@ -1,0 +1,103 @@
+.project-img{
+    width: 20rem;
+    border-radius: 50%;
+}
+
+.mywork{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+.mywork-title{
+    position: relative;
+}
+
+.mywork-title h1{
+    padding: 0px 30px;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.mywork-title img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+
+}
+
+.myproject-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.myproject-container img{
+    box-sizing: border-box;
+    width: 400px;
+    height: 270px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.myproject-container img:hover{
+    transform: scale(1.10);
+    border: 4px solid #F97D99;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.mywork-showmore{
+    display: flex;
+    gap: 15px;
+    border-radius: 50px;
+    border: 2px solid white;
+    padding: 15px 45px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.mywork-showmore:hover{
+    gap: 30px;
+    transition: 0.6s;
+    
+}
+
+@media (max-width:768px) {
+    .mywork{
+        gap: 40px;
+        margin: 50px 70px;
+        align-items: start;
+    }
+    .mywork-title h1{
+        padding: 0;
+        font-size: 35px;
+        font-weight: 500;
+        margin-left: 20px;
+    }
+    .mywork-title img{
+        width: 130px;
+        margin-right: -20px;
+    }
+    .myproject-container{
+        grid-template-columns: 1fr ;
+        gap: 25px;
+    }
+    .myproject-container img{
+        width: 100%;
+        height: 100%;
+        
+    }
+    .mywork-showmore{
+        padding: 18px 38px;
+        font-size: 18px;
+        margin: 20px auto;
+        cursor: pointer;
+    }
+}
