@@ -62,7 +62,7 @@
 
 .footer-bottom-right{
     display: flex;
-    gap: 50px;
+    gap: 10px;
     margin-bottom: 50px;
     cursor: pointer;
 }
@@ -74,6 +74,18 @@
 .footer-subscribe:hover {
     transform: scale(1.1);
     transition: 0.3s;
+}
+
+.footer-bottom-right-linkedin img{
+    height:2rem;
+}
+
+.footer-bottom-right-twitter img{
+    height:2rem;
+}
+
+.footer-bottom-right-instagram img{
+    height:2rem;
 }
 
 @media (max-width:768px) {
@@ -88,8 +100,12 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 30px;
+
     }
     .footer-subscribe{
         font-size: 10px;
+    }
+    .footer-bottom-right{
+        margin-top: 20px;
     }
 }
