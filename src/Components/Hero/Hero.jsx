@@ -30,7 +30,7 @@ const Hero = () => {
     gsap.fromTo(
       elementRef.current,
       { x: "100%" }, // Start from right
-      { x: "0%", duration: 1.5, ease: "power1.out" } // Move to left
+      { x: "0%", duration: 1.5, ease: "power1.out" }
     );
   }, []);
 
