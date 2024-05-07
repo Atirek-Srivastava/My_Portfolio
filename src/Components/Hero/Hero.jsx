@@ -24,9 +24,19 @@ const Hero = () => {
     });
   }, []);
 
+  const elementRef = useRef(null);
+
+  useEffect(() => {
+    gsap.fromTo(
+      elementRef.current,
+      { x: "100%" }, // Start from right
+      { x: "0%", duration: 1.5, ease: "power1.out" } // Move to left
+    );
+  }, []);
+
   return (
     <> 
-      <div id="home" className="hero">
+      <div id="home" className="hero" ref={elementRef}>
         <img src={profile_img} alt="" className="profile-img" />
         <h1  ref={textRef}>
           <span>I'm Atirek Srivastava </span>, MERN Stack developer

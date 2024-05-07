@@ -4,6 +4,8 @@ import theme_pattern from "../../assets/theme_pattern.svg";
 import mail_icon from "../../assets/mail_icon.svg";
 import location_icon from "../../assets/location_icon.svg"
 import call_icon from '../../assets/call_icon.svg'
+import { useRef, useEffect } from 'react';
+import { gsap } from 'gsap';
 
 const Contact = () => {
 
@@ -30,11 +32,33 @@ const Contact = () => {
     }
   };
 
+  const letterRef = useRef(null);
+
+  
+
+  useEffect(() => {
+    const letter = letterRef.current;
+    if (!letter) return;
+    
+    const bounce = () => {
+      gsap.to(letter, { duration: 0.5, y: -20, ease: "power2.out" })
+        .then(() => gsap.to(letter, { duration: 0.5, y: 0, ease: "power2.inOut" }))
+        .then(bounce); // Recursive call for infinite loop
+    };
+
+    bounce(); // Start the initial bounce
+
+    // Cleanup on unmount
+    return () => {
+      gsap.killTweensOf(letter); // Kill the animation to prevent memory leaks
+    };
+  }, [letterRef.current]);
+
 
   return (
     <>
       <div id="contact" className="contact">
-        <div className="contact-title">
+        <div className="contact-title"  ref={letterRef}>
           <h1 >Get in touch</h1>
           <img src={theme_pattern} alt="" />
         </div>

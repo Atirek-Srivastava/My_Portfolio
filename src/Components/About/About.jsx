@@ -4,14 +4,37 @@ import theme_pattern from "../../assets/theme_pattern.svg";
 // import profile_img from '../../assets/profile_img.png'
 import about_profile from "../../assets/about_profile.jpg";
 import { Widgets } from "@mui/icons-material";
+import { useRef, useEffect } from 'react';
+import { gsap } from 'gsap';
 
 function About() {
+
+  const letterRef = useRef(null);
+
+  
+  useEffect(() => {
+    const letter = letterRef.current;
+    if (!letter) return;
+
+    const bounce = () => {
+      gsap.to(letter, { duration: 0.5, y: -20, ease: "power2.out" })
+        .then(() => gsap.to(letter, { duration: 0.5, y: 0, ease: "power2.inOut" }))
+        .then(bounce); // Recursive call for infinite loop
+    };
+
+    bounce(); // Start the initial bounce
+
+    // Cleanup on unmount
+    return () => {
+      gsap.killTweensOf(letter); // Kill the animation to prevent memory leaks
+    };
+  }, [letterRef.current]);
 
   return (
     <>
       <div id="about" className="about">
-        <div className="about-title"  >
-          <h1>About me</h1>
+        <div className="about-title"  ref={letterRef} >
+          <h1 >About me</h1>
           <img src={theme_pattern} alt="" />
         </div>
         <div className="about-sections">

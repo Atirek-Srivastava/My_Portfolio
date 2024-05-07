@@ -1,17 +1,41 @@
 import React from "react";
 import "./Myproject.css";
+// import { Link } from 'react-router-dom';
 import theme_pattern from "../../assets/theme_pattern.svg";
 import mywork_data from "../../assets/mywork_data";
 import arrow_icon from "../../assets/arrow_icon.svg";
-
+import { useRef, useEffect } from "react";
+import { gsap } from "gsap";
 
 const Mywork = () => {
-  
+  const letterRef = useRef(null);
+
+  useEffect(() => {
+    const letter = letterRef.current;
+    if (!letter) return;
+
+    const bounce = () => {
+      gsap
+        .to(letter, { duration: 0.5, y: -20, ease: "power2.out" })
+        .then(() =>
+          gsap.to(letter, { duration: 0.5, y: 0, ease: "power2.inOut" })
+        )
+        .then(bounce); // Recursive call for infinite loop
+    };
+
+    bounce(); // Start the initial bounce
+
+    // Cleanup on unmount
+    return () => {
+      gsap.killTweensOf(letter); // Kill the animation to prevent memory leaks
+    };
+  }, [letterRef.current]);
+
   return (
     <>
       <div id="work" className="mywork">
-        <div className="mywork-title">
-          <h1 >My Projects </h1>
+        <div className="mywork-title" ref={letterRef}>
+          <h1>My Projects </h1>
           <img src={theme_pattern} alt="" />
         </div>
         <div className="myproject-container">

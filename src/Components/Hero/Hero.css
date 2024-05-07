@@ -1,6 +1,7 @@
 .profile-img{
     height: 25rem;
    margin-top: 40px;
+  
 }
 
 .hero{
@@ -57,7 +58,9 @@
 }
 
 .hero-connect:hover{
-    border: 2px solid white;
+    border: 2px solid rgb(50, 23, 23);
+    box-shadow: 2px 8px 50px 1px rgba(255, 253, 142, 0.5)    ;
+
 }
 
 .hero-resume:hover{
