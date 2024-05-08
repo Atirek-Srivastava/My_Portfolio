@@ -82,7 +82,7 @@ const Contact = () => {
           </div>
           <form onSubmit={onSubmit} className="contact-right">
             <label htmlFor="">Your Name</label>
-            <input type="text" placeholder="enter your name" name="name"/>
+            <input type="text" placeholder="Enter your name" name="name"/>
             <label htmlFor="">Your Email</label>
             <input type="email" name="Enter your email" placeholder="Enter your email"/>
             <label htmlFor="">Write Your Message Here</label>
