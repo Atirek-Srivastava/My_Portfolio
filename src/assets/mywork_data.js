@@ -3,7 +3,7 @@ import project2_img from '../assets/project_2.png'
 import project3_img from '../assets/project_3.png'
 import project4_img from '../assets/project_4.png'
 import project5_img from '../assets/project_5.jpeg'
-import project6_img from '../assets/project_6.jpg'
+import project6_img from '../assets/project_6.png'
 
 const mywork_data = [
     {
@@ -41,7 +41,7 @@ const mywork_data = [
         w_name:"personal portfolio",
         w_img:project6_img,
         w_link:"https://github.com/Atirek-Srivastava/My_Portfolio"
-    },
+    }, 
 ]
  
 export default mywork_data;
