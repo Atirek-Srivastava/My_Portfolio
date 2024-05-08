@@ -40,7 +40,7 @@ const mywork_data = [
         w_no:6,
         w_name:"personal portfolio",
         w_img:project6_img,
-        w_link:"/home"
+        w_link:"https://github.com/Atirek-Srivastava/My_Portfolio"
     },
 ]
  

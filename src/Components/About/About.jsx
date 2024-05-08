@@ -81,6 +81,9 @@ function About() {
               <div className="about-skill">
                 <p>Mongo DB</p> <hr style={{ width: "50%" }} />
               </div>
+              <div className="about-skill">
+                <p>GSAP</p> <hr style={{ width: "50%" }} />
+              </div>
             </div>
           </div>
         </div>
@@ -97,7 +100,7 @@ function About() {
           <hr />
           <div className="about-achievment">
             <h1>Familier With</h1>
-            <p>Tailwind, MongoDB, GIT, GITHUB</p>
+            <p>GSAP,Tailwind, MongoDB, GIT, GITHUB</p>
           </div>
         </div>
       </div>

@@ -4,6 +4,7 @@
 *{
   margin: 0;
   padding: 0;
+  /* box-sizing: border-box; */
   font-family: "Open Sans", sans-serif;
   scroll-behavior: smooth;
 }
@@ -12,8 +13,9 @@ body{
   height: 100vh;
  /* background: #333333; /* fallback colorbackground: linear-gradient(to bottom right,267deg, #333333, #000000); */
  background-color:  #f5faff ;
- background:  linear-gradient(270deg, #20433c 0%, #121111   100%);
+ background:  linear-gradient(270deg, #20433c 0%, #161513   100%);
  color: white;
 }
+
 
 

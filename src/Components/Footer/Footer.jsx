@@ -27,7 +27,7 @@ const Footer = () => {
             <hr />
             <div className="footer-bottom">
                 <p className="footer-bottom-left">
-                © Atirek Srivastava 2024. All Rights Reserved.
+                Embrace the challenge, for every line of code is a step towards innovation and mastery.
                 </p>
                 <div className="footer-bottom-right"><div className="footer-bottom-right-instagram">
                     <a href='https://www.instagram.com/__atirek_/' target="_blank"> <img src={instagram} alt="" /></a>
