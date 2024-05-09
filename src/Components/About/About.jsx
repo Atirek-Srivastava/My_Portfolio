@@ -29,6 +29,7 @@ function About() {
       gsap.killTweensOf(letter); // Kill the animation to prevent memory leaks
     };
   }, [letterRef.current]);
+   
 
   return (
     <>
@@ -59,29 +60,29 @@ function About() {
                 areas free of cost.
               </p>
             </div>
-            <div className="about-skills">
-              <div className="about-skill">
-                <p>C</p> <hr style={{ width: "50%" }} />
+            <div className="about-skills" >
+              <div className="about-skill" >
+                <p>C</p> <hr style={{ width: "50%" }}  />
               </div>
-              <div className="about-skill">
-                <p>C++</p> <hr style={{ width: "70%" }} />
+              <div className="about-skill" >
+                <p>C++</p> <hr style={{ width: "70%" }}/>
               </div>
               <div className="about-skill">
                 <p>JavaScript</p> <hr style={{ width: "60%" }} />
               </div>
-              <div className="about-skill">
+              <div className="about-skill" >
                 <p>HTML & CSS</p> <hr style={{ width: "70%" }} />
               </div>
-              <div className="about-skill">
+              <div className="about-skill" >
                 <p>React Js</p> <hr style={{ width: "60%" }} />
               </div>
-              <div className="about-skill">
+              <div className="about-skill" >
                 <p>Node js</p> <hr style={{ width: "60%" }} />
               </div>
               <div className="about-skill">
                 <p>Mongo DB</p> <hr style={{ width: "50%" }} />
               </div>
-              <div className="about-skill">
+              <div className="about-skill" >
                 <p>GSAP</p> <hr style={{ width: "50%" }} />
               </div>
             </div>

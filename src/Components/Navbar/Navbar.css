@@ -2,12 +2,13 @@
 .logo-image{
     width: 8rem;
     height: 4rem;
+    margin-right: 10px;
 }
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 170px;
+    margin: 20px 50px;
 }
 
 .nav-menu{
@@ -27,6 +28,7 @@
     font-size: 20px;
     cursor: pointer;
     transition: 0.5s;
+    margin-left: 15px;
 }
 
 .nav-connect:hover{
@@ -55,7 +57,7 @@
     display: none;
 }
 
-@media (max-width:768px){
+@media (max-width:900px){
 
     .logo-image{
         width: 5.5rem;
@@ -85,7 +87,7 @@
         align-items: start;
         top: 0;
         gap: 30px;
-        background-color: #092040;
+        background: linear-gradient(267deg, #251a33 0%, #3d7181 100%);
         width: 330px;
         height: 100%;
         z-index: 2;

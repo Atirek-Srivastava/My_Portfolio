@@ -81,7 +81,7 @@
 
 .contact-right input{
     border: none;
-    width: 700px;
+    width: 400px;
     height: 60px;
     padding-left:20px;
     border-radius: 30px;
@@ -92,7 +92,7 @@
 }
 
 .contact-right textarea{
-    width: 500px;
+    width: 400px;
     border: none;
     padding: 25px;
     border-radius: 30px;
@@ -106,7 +106,7 @@
     border: none;
     color: white;
     border-radius: 50px;
-    background: linear-gradient(267deg, #FF5733 0%, #45caa4 100%);
+    background: linear-gradient(267deg, #756c6a 0%, #2c4319 100%);
     font-size: 22px;
     padding: 20px 60px;
     margin-bottom: 50px;
@@ -124,12 +124,15 @@
         gap: 50px;
         margin: 50px 70px;
         align-items: start;
+        justify-content: center;
+        align-items: center;
     }
     .contact-title h1{
         padding: 0;
         font-size: 35px;
         font-weight: 600;
-        margin-left:20px;
+       justify-content: center;
+       align-items: center;
     }
     .contact-title img{
         width: 130px;

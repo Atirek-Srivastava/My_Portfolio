@@ -16,13 +16,13 @@ const Footer = () => {
                 <AnchorLink href='#home'><img src={logo} alt="" className='logo-img' /></AnchorLink>
                     <p>Thank you for visiting!</p>
                 </div>
-                <div className="footer-top-right">
-                    <div className="footer-email-input">
+                {/* <div className="footer-top-right"> */}
+                    {/* <div className="footer-email-input"> */}
                         {/* <img src={user_icon} alt="" /> */}
                         {/* <input type="email" placeholder='Enter your email' /> */}
-                    </div>
+                    {/* </div> */}
                     {/* <div className="footer-subscribe">Subscribe</div>  */}
-                </div>
+                {/* </div> */}
             </div>
             <hr />
             <div className="footer-bottom">
