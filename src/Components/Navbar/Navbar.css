@@ -101,3 +101,10 @@
         gap:20px;
     }
 } 
+
+@media (max-width:1080px){
+    .nav-connect{
+        display: none;
+    }
+
+}

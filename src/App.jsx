@@ -7,6 +7,7 @@ import Mywork from './Components/MyProjects/Myproject'
 import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
 
+
 const App = () => {
   return (
     <>
@@ -18,6 +19,7 @@ const App = () => {
       <Mywork/>
       <Contact/>
       <Footer/>
+      
     </>
   )
 }

@@ -55,7 +55,7 @@ const Hero = () => {
       </a>
           </div>
           <div className="hero-resume">
-          <a className="anchor-name" href='https://drive.google.com/file/d/1s8navFP9JBcSZaz6gcKVWB82XoA7Tipz/view?usp=sharing' target="_blank"  rel="noopener noreferrer">
+          <a className="anchor-name" href='https://drive.google.com/file/d/1i9eKVPinY13yaZ6Z0lklDBUyM1B7-5DF/view?usp=drive_link' target="_blank"  rel="noopener noreferrer">
           My Resume
       </a>
           </div>
